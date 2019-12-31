@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const person = (props) => {
     return(
         <div>
@@ -8,5 +9,6 @@ const person = (props) => {
         </div>
     )
 };
+
 
 export default person;
