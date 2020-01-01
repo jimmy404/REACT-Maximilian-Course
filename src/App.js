@@ -12,11 +12,16 @@ class App extends Component {
     ]
   }
 
+  switchNameHandler = () => {
+    console.log('Was clocked!')
+  }
+
+
   render() {
     return (
       <div className="App">
             <h1>Hi im React App</h1>
-          <button>Swich name</button>
+          <button onClick={this.switchNameHandler}>Swich name</button>
         <Person name={this.state.persons[0].name} age={this.state.persons[0].age} />
         <Person name={this.state.persons[1].name} age={this.state.persons[1].age}>My hobbies: Racing</Person>
         <Person name={this.state.persons[2].name} age={this.state.persons[2].age} />
