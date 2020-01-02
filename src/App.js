@@ -9,11 +9,19 @@ class App extends Component {
       { name: 'Jimmy', age: 30},
       { name: 'Nahuel', age: 32},
       { name: 'Geronimo', age: 29}
-    ]
+    ],
+    otherState: 'Some other value'
   }
 
   switchNameHandler = () => {
-    console.log('Was clocked!')
+    //console.log('Was clocked!')
+    this.setState({
+      persons: [
+      { name: 'James', age: 30},
+      { name: 'Nahuel', age: 32},
+      { name: 'Geronimo', age: 30}
+      ]
+    } )
   }
 
 
