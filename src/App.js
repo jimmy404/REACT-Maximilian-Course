@@ -6,10 +6,10 @@ const app = props => {
 
   const [personsState, setPersonsState ] = useState({
     persons: [
-      { name: 'Jimmy', age: 30},
-      { name: 'Nahuel', age: 32},
-      { name: 'Geronimo', age: 29}
-    ],
+        { name: 'Jimmy', age: 30},
+        { name: 'Nahuel', age: 32},
+        { name: 'Geronimo', age: 29}
+      ],
     otherState: 'Some other value'
   });
 
@@ -17,9 +17,9 @@ const app = props => {
     //console.log('Was clocked!')
     setPersonsState({
       persons: [
-      { name: 'James', age: 30},
-      { name: 'Nahuel', age: 32},
-      { name: 'Geronimo', age: 30}
+        { name: 'James', age: 30},
+        { name: 'Nahuel', age: 32},
+        { name: 'Geronimo', age: 30}
       ]
     });
   };
