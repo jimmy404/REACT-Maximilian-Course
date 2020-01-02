@@ -10,9 +10,10 @@ const app = props => {
         { name: 'Nahuel', age: 32},
         { name: 'Geronimo', age: 29}
       ],
-    otherState: 'Some other value'
   });
 
+  const [otherState, setOtherState] = useState('Some other value');
+console.log(personsState, otherState);
   const switchNameHandler = () => {
     //console.log('Was clocked!')
     setPersonsState({
