@@ -1,9 +1,7 @@
 import React from 'react';
 import classes from './Person.css';
 
-
 const person = (props) => {
-
 
     return (
         //<div className="Person" style={style}>
