@@ -3,9 +3,22 @@ import React, { Component } from 'react';
 import Person from './Person/Person';
 
 class Persons extends Component {
-    static getDerivedStateFromProps(props, state){
-        console.log(['Persons.js] getDerivedStateFromProps');
-        return state;
+    //static getDerivedStateFromProps(props, state){
+    //    console.log('[Persons.js] getDerivedStateFromProps');
+    //    return state;
+    //}
+
+    shouldComponentUpdate(nextProps, nextState){
+        console.log('[Persons.js] shouldComponentUpdate');
+        return true;
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState){
+        console.log('[Persons.js] getSnapshotBeforeUpdate');
+    }
+
+    componentDidUpdate(){
+        console.log('[Persons.js] componentDidUpdate');
     }
 
     render(){
