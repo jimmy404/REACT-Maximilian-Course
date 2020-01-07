@@ -6,11 +6,10 @@ const cockpit = (props) => {
     useEffect(() => {
         console.log('[Cockpit.js] useEffect');
         //http request
-        const timer = setTimeout( () => {
+        setTimeout( () => {
             alert('saved data to cloud');
         }, 1000);
         return() => {
-            clearTimeout(timer);
             console.log('[Cockpit.js] cleanup work in useEffect');
         }
     }, []); //> Esto me permite controlar cuando aparece el useEffect.
