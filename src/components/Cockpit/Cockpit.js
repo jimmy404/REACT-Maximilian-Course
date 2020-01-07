@@ -9,9 +9,17 @@ const cockpit = (props) => {
         setTimeout( () => {
             alert('saved data to cloud');
         }, 1000);
+        return() => {
+            console.log('[Cockpit.js] cleanup work in useEffect');
+        }
     }, []); //> Esto me permite controlar cuando aparece el useEffect.
 
-
+    useEffect(() => {
+        console.log('[Cockpit.js] 2nd useEffect');
+        return() => {
+            console.log('[Cockpit.js] cleanup work in useEffect');
+        };
+    });
 
     const assignedClasses = [];
     let btnClass = '';
