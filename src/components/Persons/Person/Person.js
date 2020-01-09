@@ -5,7 +5,6 @@ import Aux from '../../../hoc/Auxiliary';
 import classes from './Person.css';
 import withClass from '../../../hoc/withClass';
 import AuthContext from '../../../context/auth-context';
-
 class Person extends Component {
 
     constructor(props){
